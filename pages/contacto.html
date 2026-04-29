@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cen Antigüedades</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-titulo">
+        <img src="/img/logo.jpg" alt="logo" class="logo" />
+        <h1>Cen Antigüedades</h1>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/pages/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="productos-titulo contacto">
+        <br />Completa el formulario y te responderemos lo antes posible.
+      </h2>
+      <section class="formulario">
+        <form action="https://formspree.io/f/xpqoldyn" method="POST">
+          <label>
+            Nombre:
+            <input type="text" name="nombre" required />
+          </label>
+          <label>
+            Email:
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Mensaje:
+            <textarea name="mensaje" required></textarea>
+          </label>
+          <button type="submit" class="boton enviar">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © Todos los derechos reservados. Sitio diseñado por Yanina Garcia -
+        Abril 2026
+      </p>
+      <nav>
+        <ul class="footer-list">
+          <li>
+            <a
+              href="https://wa.me/5491165889626?text=Hola,%20quisiera%20mas%20informacion"
+              target="_blank"
+            >
+              <img src="/img/whatsapp.png" alt="Contactar por WhatsApp" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/cen_antiguedades"
+              target="_blank"
+            >
+              <img src="/img/instagram.png" alt="Visitar Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="/pages/contacto.html" target="_blank">
+              <img src="/img/mail.png" alt="Imagen de contacto" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

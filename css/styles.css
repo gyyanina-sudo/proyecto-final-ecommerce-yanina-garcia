@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border box;
+    font-family: 'Times New Roman', Times, serif
+}
+
+footer {
+    color: black;
+    /*background-color: #c7989b;*/
+    /*background: linear-gradient(10deg, #c7989b, #ca9093, #cf7c82);*/
+    background: linear-gradient(10deg, #e7cf8a, #e7c766, #916e07);
+    text-align: center;
+    font-family: monospace;
+    border: 6px double #6e4e37;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    padding-top: 10px;
+}
+
+.footer-list {
+    display: flex;
+    /* Activamos Flexbox */
+    justify-content: center;
+    /* Distribución centrica */
+    gap: 20px;
+    /* Define espacio exacto entre los iconos del pie [3, 8] */
+    list-style: none;
+    padding: 7px;
+
+}
+
+.footer-list img {
+    width: 1.5rem;
+}
+
+.footer-list a {
+    color: black;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+/* ------------------ Botones --------------------------------- */
+
+.boton {
+    background-color: #c27024;
+    color: black;
+    /* Añade espacio entre el texto y el borde del botón Vertical | Horizontal */
+    padding: 12px 20px;
+    border: 2px solid #6e4e37;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    width: 100%;
+    position: relative;
+
+}
+
+.boton:hover {
+    background-color: #c08a27;
+}
+
+.boton i {
+    margin-right: 8px;
+}
+
+
+/* ------------------ Barra de navegacion --------------------------------- */
+
+.navbar {
+    background: linear-gradient(10deg, #e7cf8a, #e7c766, #916e07);
+    padding: 1rem 0;
+    border: 6px double #6e4e37;
+    border-radius: 12px;
+}
+
+/*contenedor*/
+.nav-list {
+    display: flex;
+    /* Activamos Flexbox */
+    justify-content: space-evenly;
+    /* Distribución equitativa */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*items*/
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    filter: sepia(0.3);
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #0b6cdb;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espacio de separación entre el logo y el texto */
+    text-decoration: none;
+    font-size: 17px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    filter: sepia(0.3);
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+/* ------------------  Pagina Index --------------------------------- */
+
+
+/* Titulo del parrafo de bienvenida*/
+.bienvenida-titulo {
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    padding-bottom: 10px;
+    padding-top: 0%;
+}
+
+/* Parrafo de bienvenida*/
+.bienvenida {
+    width: 84%;
+    max-width: 990px;
+    margin: 30px auto;
+    padding: 1px;
+    /*padding-top: 1%;*/
+    border-radius: 8px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    /*  border: 6px ridge #c99526;^*/
+
+}
+
+body {
+    background-color: #f0eadc;
+}
+
+main {
+    padding-bottom: 34px;
+    padding-top: 34px;
+    text-align: center;
+}
+
+.precio {
+    display: inline-flex;
+    padding: 18px 0px;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #070511;
+}
+
+.precio-anterior {
+    text-decoration: line-through;
+    color: #DA2C43;
+    padding: 0px 0px;
+
+}
+
+.precio-final {
+    color: #708238;
+    padding: 0px 0px;
+}
+
+.ver-todos {
+    color: #8f4704;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ver-todos:hover {
+    color: #333;
+}
+
+/* ------------------ Pagina Productos --------------------------------- */
+
+
+.mi-raya {
+    border: 0;
+    height: 5px;
+    /* background-image: linear-gradient(to top, #978242, #f0d176, #916e07);*/
+    background-color: #cf9b39;
+    width: 30%;
+    margin: auto;
+    border-radius: 12px;
+    filter: sepia(0.3);
+}
+
+h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-weight: lighter;
+    padding: 9px 9px;
+    text-align: center;
+}
+
+.productos-titulo {
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: lighter;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 40px;
+}
+
+/*flexbox-contenedor*/
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 12px;
+    padding-bottom: 34px;
+    padding-top: 34px;
+
+}
+
+/*items*/
+.producto-tarjeta {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 5px double #6e4e37;
+
+
+}
+
+.producto-descripcion {
+    padding: 40px 5%;
+    font-size: large;
+    text-align: center;
+
+}
+
+.producto-tarjeta:hover {
+    transform: translateY(-24px);
+}
+
+.producto-tarjeta img {
+    width: 100%;
+    height: 390px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/* ------------------ Pagina Contacto --------------------------------- */
+
+.formulario {
+    /* Ocupa casi todo el ancho */
+    width: 90%;
+    max-width: 900px;
+    /* Se aplica al margen superior e inferior (arriba y abajo).
+    auto: Se aplica al margen izquierdo y derecho en forma equitativa*/
+    margin: 50px auto;
+    padding: 20px;
+    /* background-image: url(/img/papiro.jpg);*/
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url('/img/papiro.jpg');
+    background-repeat: repeat;
+    border-radius: 8px;
+    border: 5px double #6e4e37;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=submit] {
+    background-color: #d8ab18;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.enviar {
+    width: 20%;
+    border: 3px solid #6e4e37;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    /*alineado a la izquierda*/
+    margin-right: auto;
+}
+
+.contacto {
+    margin-top: 5px;
+    /* Separa el título del borde superior */
+    margin-bottom: 5px;
+    /* Separa el título del texto de abajo */
+    margin-left: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+/* ------------------ Media Queries --------------------------------- */
+@media (max-width:600px) {
+
+    header,
+    footer {
+        flex-direction: column;
+    }
+}
