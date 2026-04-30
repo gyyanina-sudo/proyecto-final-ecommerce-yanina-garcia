@@ -273,7 +273,7 @@ h2 {
     padding: 20px;
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-        url('/img/papiro.jpg');
+        url('../img/papiro.jpg');
     background-repeat: repeat;
     border-radius: 8px;
     border: 5px double #6e4e37;
