@@ -7,8 +7,6 @@
 
 footer {
     color: black;
-    /*background-color: #c7989b;*/
-    /*background: linear-gradient(10deg, #c7989b, #ca9093, #cf7c82);*/
     background: linear-gradient(10deg, #e7cf8a, #e7c766, #916e07);
     text-align: center;
     font-family: monospace;
@@ -191,11 +189,9 @@ main {
 
 /* ------------------ Pagina Productos --------------------------------- */
 
-
 .mi-raya {
     border: 0;
     height: 5px;
-    /* background-image: linear-gradient(to top, #978242, #f0d176, #916e07);*/
     background-color: #cf9b39;
     width: 30%;
     margin: auto;
@@ -246,7 +242,7 @@ h2 {
 }
 
 .producto-descripcion {
-    padding: 40px 5%;
+    padding: 10px 5%;
     font-size: large;
     text-align: center;
 
@@ -273,9 +269,8 @@ h2 {
     max-width: 900px;
     /* Se aplica al margen superior e inferior (arriba y abajo).
     auto: Se aplica al margen izquierdo y derecho en forma equitativa*/
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 20px;
-    /* background-image: url(/img/papiro.jpg);*/
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
         url('/img/papiro.jpg');
@@ -335,9 +330,9 @@ input[type=email] {
 }
 
 .contacto {
-    margin-top: 5px;
-    /* Separa el título del borde superior */
-    margin-bottom: 5px;
+
+    /* Separa el título del borde superior margin-top: 1px;  margin-bottom: 0.5px;*/
+
     /* Separa el título del texto de abajo */
     margin-left: 26px;
     font-family: 'Times New Roman', Times, serif;
