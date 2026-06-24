@@ -1,0 +1,61 @@
+
+[
+  {
+    "id":"1",
+    "nombre": "Radio Spica",
+    "descripcion": "Radio Spica AM/FM: Un Ícono de la Época Dorada. Recuperá la magia de la radiofonía clásica con esta auténtica Spica en color negro profundo.",
+    "precio": 35000,
+    "imagen": "img/radio.jpg"
+  },
+  {
+    "id":"2",
+    "nombre": "Adorno Navideño",
+    "descripcion": "Madera Artesanal. Capturá la magia de las fiestas con este delicado pájaro tallado en madera de inspiración antigua con detalles unicos",
+    "precio": 2000,
+    "imagen": "img/pajaro_nav.jpg"
+  },
+  { "id":"3",
+    "nombre": "Adorno Búho",
+    "descripcion": "Miniatura de Búho en Porcelana Fina. Una pieza de decoración delicada y atemporal, elaborada en porcelana de alta calidad con un acabado suave al tacto.",
+    "precio": 1560,
+    "imagen": "img/buho.jpg"
+  },
+  {"id":4,
+    "nombre": "Portasahumerio Ardilla",
+    "descripcion": "Portasahumerio Ardilla del Bosque: Estética Shabby Chic. Esta pieza artesanal combina la funcionalidad de un porta incienso con una escultura silvestre.",
+    "precio": 2600,
+    "imagen": "img/ardilla.jpg"
+  },
+  {"id":5,
+    "nombre": "Velador de Mesa",
+    "descripcion": "Velador de mesa artesanal con base de madera. Esta pieza exclusiva presenta un acabado en degrade negro hacia los bordes, resaltando la veta natural de la madera.",
+    "precio": 24000,
+    "imagen": "img/velador.jpg"
+  },
+   {"id":6,
+    "nombre": "Taza de Café con Plato",
+    "descripcion": "Delicada taza de café con plato a juego, distinguida por un borde ornamental de flores en tonos azules profundos. Una pieza que combina diseño clásico y calidez.",
+    "precio": 84000,
+    "imagen": "img/taza_flores_azul.jpg"
+  },
+   {"id":7,
+    "nombre": "Taza de Té con Plato",
+    "descripcion": "Delicada taza de té con plato a juego, que fusiona la elegancia de motivos florales con un exclusivo efecto marmolado en tono naranja vintage.",
+    "precio": 18000,
+    "imagen": "img/taza_naranja.jpg"
+  },
+
+  {"id":8,
+    "nombre": "Prendedor Colibrí",
+    "descripcion": "Prendedor \"Colibrí Radiante\" en Cristales y Oro. Una pieza de alta bisutería que captura la agilidad y belleza del colibrí. Ideal para tus prendas.",
+    "precio": 104000,
+    "imagen": "img/colibri.jpg"
+  },
+ {"id":9,
+    "nombre": "Pinchos de Copetín",
+    "descripcion": "Juego de seis piezas diseñadas para elevar tus presentaciones de aperitivos. Cada pincho cuenta con un mango coronado por delicados detalles florales.",
+    "precio": 56990,
+    "imagen": "img/pinches.jpg"
+  }
+
+]

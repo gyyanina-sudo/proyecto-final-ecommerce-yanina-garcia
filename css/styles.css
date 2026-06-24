@@ -45,24 +45,24 @@ footer {
     color: black;
     /* Añade espacio entre el texto y el borde del botón Vertical | Horizontal */
     padding: 12px 20px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+    padding: 10px 16px;
     border: 2px solid #6e4e37;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: background 0.3s;
-    width: 100%;
+    width: 90%;
     position: relative;
 
 }
 
 .boton:hover {
     background-color: #c08a27;
-}
+    font-weight: bold;
 
-.boton i {
-    margin-right: 8px;
 }
-
 
 /* ------------------ Barra de navegacion --------------------------------- */
 
@@ -92,7 +92,7 @@ footer {
     font-family: 'Roboto', sans-serif;
     filter: sepia(0.3);
     font-weight: 500;
-    padding: 10px 20px;
+    padding: 5px 10px;
     transition: color 0.3s;
 }
 
@@ -116,17 +116,16 @@ footer {
     width: 50px;
     height: auto;
 }
-
+   
 /* ------------------  Pagina Index --------------------------------- */
 
 
 /* Titulo del parrafo de bienvenida*/
 .bienvenida-titulo {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    padding-bottom: 10px;
-    padding-top: 0%;
+    margin-bottom: 5px;
 }
 
 /* Parrafo de bienvenida*/
@@ -138,17 +137,17 @@ footer {
     /*padding-top: 1%;*/
     border-radius: 8px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: lighter;
-    /*  border: 6px ridge #c99526;^*/
 
 }
 
 body {
     background-color: #f0eadc;
+
 }
 
-main {
+#main-productos {
     padding-bottom: 34px;
     padding-top: 34px;
     text-align: center;
@@ -156,26 +155,14 @@ main {
 
 .precio {
     display: inline-flex;
-    padding: 18px 0px;
     align-items: center;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #070511;
+    color: black;
 }
 
-.precio-anterior {
-    text-decoration: line-through;
-    color: #DA2C43;
-    padding: 0px 0px;
-
-}
-
-.precio-final {
-    color: #708238;
-    padding: 0px 0px;
-}
-
-.ver-todos {
+#ver-todos {
+    text-align: center;
     color: #8f4704;
     font-size: 20px;
     text-decoration: none;
@@ -183,82 +170,118 @@ main {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.ver-todos:hover {
+#ver-todos:hover {
     color: #333;
 }
 
 /* ------------------ Pagina Productos --------------------------------- */
 
-.mi-raya {
-    border: 0;
-    height: 5px;
-    background-color: #cf9b39;
-    width: 30%;
-    margin: auto;
-    border-radius: 12px;
-    filter: sepia(0.3);
-}
-
-h2 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    font-weight: lighter;
-    padding: 9px 9px;
-    text-align: center;
-}
-
-.productos-titulo {
-    text-align: center;
-    font-size: 28px;
-    color: black;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    font-weight: lighter;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    padding-left: 40px;
-}
-
-/*flexbox-contenedor*/
-.productos {
+/* Contenedor de tarjetas: layout tipo catálogo (3 columnas en desktop) */
+#producto-tarjeta {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    border-radius: 12px;
-    padding-bottom: 34px;
-    padding-top: 34px;
-
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 10px;
 }
 
-/*items*/
-.producto-tarjeta {
+/* Estilo de cada tarjeta de producto (index y carrito) */
+#producto-tarjeta > article,
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: #fffaf0;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
     border: 5px double #6e4e37;
-
-
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.producto-descripcion {
-    padding: 10px 5%;
-    font-size: large;
-    text-align: center;
-
-}
-
-.producto-tarjeta:hover {
+#producto-tarjeta >article:hover {
     transform: translateY(-24px);
 }
 
-.producto-tarjeta img {
-    width: 100%;
-    height: 390px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
+/* Título en banda superior como en la imagen */
+#producto-tarjeta > article > h2,
+.card > h3 {
+    background: rgba(255, 250, 240, 0.95);
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(110,78,55,0.08);
+    font-family: 'Times New Roman', Times, serif
+}
+
+/* Imagen full-width dentro de la tarjeta: mostrar completa y más baja */
+#producto-tarjeta img,
+.card img {
+    width: 200px;
+    height: 160px;               
+    margin: 0 auto;
+}
+
+/* Descripción centrada y con padding cómodo */
+#producto-tarjeta .producto-descripcion,
+.card .producto-descripcion {
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    text-align: center;
+    color: #2b2b2b;
+}
+
+/* Precio centrado y destacado */
+#producto-tarjeta > article > p,
+.card > p {
+    text-align: center;
+    font-weight: 700;
+    margin: 6px 0 12px 0;
+}
+
+/* Botón ancho dentro de la tarjeta, alineado al centro */
+#producto-tarjeta .boton,
+.card .boton {
+    width: 190px; 
+    margin: 0 auto 16px auto;
+    display: block;
+    font-size: 15px;
+}
+
+.productos-titulo{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;
+    margin-bottom: 12px;
+}
+
+
+/* Responsive: 2 columnas tablet, 1 columna móvil */
+@media (max-width: 1000px) {
+    #producto-tarjeta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #producto-tarjeta {
+        grid-template-columns: 1fr;
+        padding: 8px;
+    }
+    #producto-tarjeta img,
+    .card img {
+        height: 160px;
+        object-fit: contain;
+    }
+    .boton {
+        width: 90%;
+    }
 }
 
 /* ------------------ Pagina Contacto --------------------------------- */
@@ -347,3 +370,83 @@ input[type=email] {
         flex-direction: column;
     }
 }
+
+/* ------------------ Alertas personalizadas --------------------------------- */
+#alert-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 10000;
+    align-items: center;
+    pointer-events: none;
+}
+
+.alert {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 8px;
+    border: 3px solid #0c0a08;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    font-weight: 800;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.alert--hide { opacity: 0; transform: translateY(-10px); }
+
+.alert__close {
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0 0.2rem;
+    color: inherit;
+    pointer-events: auto;
+}
+
+.alert__text { display: inline-block; }
+
+.alert--success { background: #e9d8c9; color: #161515; border-color: #c2970b; }
+.alert--info { background: rgba(255,250,240,0.95); color: #070707; border-color: #cf9b39; }
+.alert--error { background: #e74c3c; color: #0e0d0d; border-color: #b33; }
+
+@media (max-width: 600px) {
+    #alert-container { left: 50%; top: 50%; transform: translate(-50%, -50%); width: 92%; }
+    .alert { width: 100%; justify-content: space-between; pointer-events: auto; min-height: 56px; padding: 0.8rem 1rem; }
+}
+
+/* ------------------ Acciones del carrito (botón vaciar) ------------------ */
+#acciones-carrito {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        gap: 0.6rem;
+        width: 90px;
+        margin: 0 auto 16px auto;
+        pointer-events: auto;
+        box-sizing: border-box;
+        padding: 0 1rem;
+        
+}
+
+#acciones-carrito .boton {
+        width: auto;
+        min-width:190px;
+        padding: 0.9rem 1.4rem;
+        font-size: 15px;
+       
+
+}
+
+@media (max-width: 600px) {
+    #acciones-carrito { width: 92%; margin: 1.5rem auto; }
+    #acciones-carrito .boton { min-width: 160px; width: 100%; }
+}
+

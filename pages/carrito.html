@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/styles.css" />
+      <link rel="stylesheet" href="../css/styles.css" />
     <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -21,37 +21,28 @@
         <a href="../index.html">
           <img src="../img/logo.jpg" alt="logo" class="logo" />
         </a>
-
         <h1>Cen Antigüedades</h1>
       </div>
       <nav class="navbar">
         <ul class="nav-list">
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li><a href="./carrito.html">Carrito 🛒 <span id="contador-carrito">0</span></a></li>
+           <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>          
+         <li><a href="./carrito.html">Carrito 🛒 <span id="contador-carrito">0</span></a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h2 class="productos-titulo contacto">
-        Completa el formulario y te responderemos lo antes posible.
-      </h2>
-      <section class="formulario">
-        <form action="https://formspree.io/f/xpqoldyn" method="POST">
-          <label>
-            Nombre:
-            <input type="text" name="nombre" required />
-          </label>
-          <label>
-            Email:
-            <input type="email" name="email" required />
-          </label>
-          <label>
-            Mensaje:
-            <textarea name="mensaje" required></textarea>
-          </label>
-          <button type="submit" class="boton enviar">Enviar</button>
-        </form>
+     <h2 class="productos-titulo"> Productos del Carrito</h2>
+      <section id="producto-tarjeta" class="producto-tarjeta">
+        <!-- Productos del carrito se renderizan aquí -->
+      </section>
+
+      <div id="acciones-carrito" class="acciones-carrito">
+        <!-- Botones de eliminar y finalizar compra se agregan desde JS -->
+      </div>
+
+      <section id="resumen-carrito">
+        <!-- Aca ira el resumen del carrito -->
       </section>
     </main>
 
@@ -85,8 +76,8 @@
           </li>
         </ul>
       </nav>
-        <!--👉 Agregar type module y enlace al contacto.js -->
-    <script type="module" src="../js/contacto.js"></script>
+       <!--👉 Agregar type module y enlace al carrito.js -->
+    <script type="module" src="../js/carrito.js"></script>
     </footer>
   </body>
 </html>
